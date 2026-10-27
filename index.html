@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Munib Ur Rehman &mdash; Shinobi of Code | Portfolio</title>
+  <meta name="description" content="Munib Ur Rehman &mdash; 4th semester BS student at Virtual University building full-stack web apps with Next.js, FastAPI, Supabase and more." />
+  <meta name="theme-color" content="#2E3150" />
+  <meta property="og:title" content="Munib Ur Rehman &mdash; Shinobi of Code" />
+  <meta property="og:description" content="Anime-inspired developer portfolio: KuroAnime, Noor-e-Quran, IlmRaah, TeyvatResonance, SnapGet & more." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Satoshi (Fontshare / Indian Type Foundry) + Google Material Symbols (subset for speed) -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&icon_names=arrow_back,arrow_forward,call,chat,cloud_download,code,data_object,directions_car,download,forum,home,hub,keyboard,live_tv,location_on,menu_book,movie,open_in_new,play_circle,public,school,sports_esports,swords,terminal,widgets&display=block" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+
+    <!-- ===== HERO BANNER ===== -->
+    <header class="hero neu" id="top">
+      <div class="hero__art" aria-hidden="true"></div>
+      <p class="hero__eyebrow">Meet the Full-Stack Shinobi</p>
+      <h1 class="hero__title">SHINOBI OF CODE</h1>
+      <div class="hero__actions">
+        <a class="pill pill--light" href="https://github.com/Munib115" target="_blank" rel="noopener">
+          <svg class="gh" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          GitHub
+        </a>
+        <a class="hero__home neu-btn" href="#top" aria-label="Home"><span class="msr">home</span></a>
+        <a class="pill pill--light" href="#missions">See Projects</a>
+      </div>
+    </header>
+
+    <!-- ===== PROFILE ===== -->
+    <section class="profile" aria-label="About Munib Ur Rehman">
+      <article class="namecard neu">
+        <p class="namecard__sur"><span>MUNIB</span><i aria-hidden="true"></i></p>
+        <h2 class="mega" aria-label="Ur Rehman">UR REHMAN</h2>
+        <p class="namecard__bio">
+          4th-semester BS student at <strong>Virtual University of Pakistan</strong>.
+          I build full-stack web apps &mdash; Next.js, FastAPI, Supabase &mdash; with an anime soul.
+        </p>
+      </article>
+
+      <figure class="portrait" aria-label="Profile picture">
+        <div class="portrait__card">
+          <img src="assets/profile.png" alt="Munib Ur Rehman" width="1280" height="1280"
+               decoding="async" fetchpriority="high" />
+        </div>
+        <figcaption class="portrait__tag"><span class="msr">location_on</span> Pakistan</figcaption>
+      </figure>
+
+      <div class="actions">
+        <a class="logo-bubble neu" href="#top" aria-label="Munib logo">
+          <img src="assets/logo.svg" alt="" width="44" height="44" />
+        </a>
+        <div class="actions__pills">
+          <a class="pill pill--neu" href="https://github.com/Munib115" target="_blank" rel="noopener">Account</a>
+          <a class="pill pill--neu" href="#sensei">Ask Sensei</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSIONS (PROJECTS STRIP) ===== -->
+    <section class="missions neu" id="missions" aria-label="Featured projects">
+      <div class="missions__head">
+        <h2 class="missions__title">16 SHINOBI MISSIONS</h2>
+        <p class="missions__sub" id="missionCount">Showing 16 of 16 GitHub Repositories &mdash; Swipe or use arrows</p>
+      </div>
+      <button class="arrow arrow--prev" type="button" aria-label="Previous project"><span class="msr">arrow_back</span></button>
+      <div class="missions__track" id="track" role="list"></div>
+      <button class="arrow arrow--next" type="button" aria-label="Next project"><span class="msr">arrow_forward</span></button>
+    </section>
+
+    <!-- ===== ANIME SENSEI EXPLAINS ===== -->
+    <section class="sensei" id="sensei" aria-label="Project explained by Anime Character">
+      <div class="sensei__char">
+        <img id="senseiImg" src="assets/goku.jpg" alt="Goku sensei mascot" width="600" height="804" loading="lazy" decoding="async" />
+        <span class="sensei__badge" id="senseiBadge"><span class="msr">terminal</span> <span id="senseiBadgeText">Goku Mode</span></span>
+      </div>
+
+      <article class="bubble neu" aria-live="polite">
+        <header class="bubble__head">
+          <img class="bubble__avatar" id="senseiAvatar" src="assets/goku-head.jpg" alt="" width="56" height="56" loading="lazy" />
+          <div>
+            <p class="bubble__who" id="pWho">GOKU EXPLAINS</p>
+            <h3 class="bubble__name" id="pName">&mdash;</h3>
+          </div>
+          <span class="bubble__rank" id="pRank">S-RANK</span>
+        </header>
+
+        <p class="bubble__text" id="pSpeech"></p>
+
+        <ul class="bubble__features" id="pFeatures"></ul>
+        <div class="chips" id="pStack"></div>
+
+        <div class="bubble__links" id="pLinks"></div>
+        <p class="bubble__note" id="pNote" hidden></p>
+      </article>
+    </section>
+
+    <!-- ===== JUTSU (SKILLS FOR SELECTED PROJECT) ===== -->
+    <section class="jutsu neu" aria-label="Skills">
+      <div class="jutsu__head">
+        <h2 class="section-title"><span class="msr">data_object</span> JUTSU SCROLL &mdash; <span id="jutsuProject">KuroAnime</span></h2>
+        <span class="jutsu__hint">Highlighted tags show Jutsu used in the selected mission</span>
+      </div>
+      <div class="chips chips--big" id="jutsuList"></div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot">
+      <span class="foot__avatar"><img src="assets/logo.svg" alt="" width="34" height="34" /></span>
+      <span class="pill pill--neu pill--static">design by: munib_115</span>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
